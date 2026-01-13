@@ -120,37 +120,6 @@
 
 針對 .NET Framework 4.0 等舊版本專案，建議在 `csharp.instructions.md` 中明確定義技術限制：
 
-<details>
-<summary>範例：.NET Framework 4.0 限制說明</summary>
-
-#### 技術環境需求
-
-- **開發框架**: ASP.NET WebForm (.NET Framework 4.0)
-- **C# 語言版本**: C# 4.0
-- **前端技術**: HTML5、JavaScript、jQuery
-- **資料庫**: Microsoft SQL Server
-- **連線字串**: 使用既有 `conn` 連線配置
-- **相容性要求**: 須完全相容現有 C# 4.0 專案架構，不可破壞現有功能
-
-#### C# 4.0 語法相容性（嚴格遵守）
-
-```csharp
-// ❌ 禁用語法
-var result = GetData();                              // 禁用 var 關鍵字
-string message = $"Hello {name}";                    // 禁用字串插值
-string value = obj?.ToString();                      // 禁用 null-conditional operators
-await SomeMethodAsync();                             // 禁用 async/await
-List<string> items = new() { "A", "B" };            // 禁用目標型別 new 運算式
-
-// ✅ 正確語法
-DataTable result = GetData();                        // 明確型別宣告
-string message = string.Format("Hello {0}", name);   // 使用 string.Format
-string value = (obj != null) ? obj.ToString() : string.Empty;  // 明確 null 檢查
-List<string> items = new List<string>() { "A", "B" };  // 完整型別宣告
-```
-
-</details>
-
 - 可參考 `OldArchitecture.md` 檔案中的相關內容進行調整。
 
 > **提示**: 完整範例可參考專案中的 `.github/instructions/csharp.instructions.md` 檔案
