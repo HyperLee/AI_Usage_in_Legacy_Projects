@@ -420,6 +420,9 @@ graph LR
 4. **[如何安裝 VSCode 與編譯](https://www.youtube.com/watch?v=fF9p4TPRJDk)**  
    環境設定教學影片
 
+5. **[Spec Kit](https://github.com/github/spec-kit)**  
+   SDD 的規範與範本
+
 ### 進階學習資源
 
 想深入了解如何更有效使用 AI 開發工具？
