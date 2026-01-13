@@ -139,3 +139,10 @@ AI 產完程式碼之後務必要自己再看過一次, AI 產完是 AI 的程�
 以上是針對新舊專案的一些設定與使用的個人使用習慣說明,
 如果想針對 AI 如何使用這就是另一個議題了.
 可以先參考 Trello 上面的`資源共享區` 我有放了數個關於 GitHub Copilot 與 AI 使用的資源連結.
+
+### 參考來源
+
+1. [VSCode設定] - (https://github.com/doggy8088/github-copilot-configs )
+2. [awesome-copilot] - (https://github.com/github/awesome-copilot/tree/main)
+3. [skills] - (https://skillsmp.com/)
+4. [如何安裝VSCode與編譯 ]- (https://www.youtube.com/watch?v=fF9p4TPRJDk)
