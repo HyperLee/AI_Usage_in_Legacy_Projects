@@ -8,12 +8,14 @@
 除非能確保該專案都沒有人使用過AI相關工具
 
 1. 參考 `project-init.prompt.md` 檔案
+
 - 產生 `.gitignore`
 - 產生 `.editorconfig`
 - 修改 `.editorconfig` 以強制程式碼風格
 - 加入 startDebugging 設定 (這部分是要在VS Code中使用的, 如果不使用這套IDE可以忽略)
 
 2. `.github` 資料夾加入 `agents/instructions/prompts` 相關檔案
+
 - agents
   - code-review.agent.md
   - CSharpExpert.agent.md
@@ -26,6 +28,7 @@
 如果不知道有那些範本可以參考, 可以到 `https://github.com/github/awesome-copilot/tree/main` 找尋相關資源.
 
 ## 優化 `csharp.instructions.md` 檔案
+
 `csharp.instructions.md` 這檔案必須要根據專案需求來做調整,主要是針對專案的程式碼風格,命名規則,架構設計等做說明.
 這隻檔案可以說是Rule的概念, 把你想要的規範都寫進去, 這樣AI在分析程式碼時才會比較準確.
 簡單作法可以參考我目前檔案內容, 放到專案中 接著開啟對話視窗選擇比較聰明的模型比如 `Claude Opus 4.5` 
@@ -36,10 +39,13 @@
 instructions.md 檔案不需要人工呼叫使用, AI會自動參考.
 
 上述的檔案我是基於 .Net Core 10, c# 14 來當作範本,對於這份檔案我也是調整很長時間才找出目前比較滿意的版本.
-如果是 .netFramework 版本我會特別加入如下
+我有個專案是 .netFramework 版本然後版本還特別低, 我會特別加入如下AI產出來的Code比較滿意.
+不然常常會遇到非 .NET Framework 4.0 的語法被使用, 導致無法相容的問題.
 
 ---
+
 ## 技術環境需求
+
 - **開發框架**: ASP.NET WebForm (.NET Framework 4.0)
 - **C# 語言版本**: C# 4.0 
 - **前端技術**: HTML5、JavaScript、jQuery
@@ -50,6 +56,7 @@ instructions.md 檔案不需要人工呼叫使用, AI會自動參考.
 ## 重要開發準則
 
 ### 1. 程式碼風格與命名規範
+
 - **函式命名**: 遵循 PascalCase 命名慣例 (如: `BindCountyDropDownList`)
 - **變數命名**: 使用 camelCase (如: `countyID`)
 - **控制項命名**: 使用有意義的前綴 (如: `ddl` 代表 DropDownList、`tb` 代表 TextBox)
@@ -57,6 +64,7 @@ instructions.md 檔案不需要人工呼叫使用, AI會自動參考.
 - **註解規範**: 為所有新增方法提供詳細的 XML 文件註解
 
 ### 2. C# 4.0 語法相容性 (嚴格遵守)
+
 ```csharp
 // ❌ 禁用語法
 var result = GetData();                              // 禁用 var 關鍵字
@@ -73,6 +81,7 @@ List<string> items = new List<string>() { "A", "B" };  // 完整型別宣告
 ```
 
 ### 3. 程式碼修改原則
+
 - **保持功能一致**: 修改後的程式行為必須與原有程式完全一致
 - **向下相容**: 不可破壞現有功能或影響其他相依模組
 - **最小化影響**: 僅修改指定區塊程式碼，不改動其他邏輯
@@ -80,17 +89,20 @@ List<string> items = new List<string>() { "A", "B" };  // 完整型別宣告
 - **錯誤處理**: 保持與現有程式碼相同的 try-catch-finally 結構
 
 ### 4. 資料庫存取規範
+
 - 使用 `SqlConnection` 搭配 `ConfigurationManager` 讀取連線字串
 - 使用 `SqlDataAdapter` 進行資料查詢
 - 使用參數化查詢 (`AddWithValue`) 防止 SQL Injection
 - 確保連線物件在 `finally` 區塊中正確關閉
 - 設定適當的 `CommandTimeout` (現有設定為 180 秒)
+
 ---
 
 如果想看我舊版本的可以再提出, 由於有些檔案比較敏感就不放到網路上了避免爭議
 `csharp.instructions.md` 檔案建議寫英文, AI讀取英文比較厲害, 其餘檔案就隨意了.
 
 ## prompts與agents檔案說明
+
 這邊是需要手動呼叫的, 所以可以依據個人想使用的功能來決定要加入那些檔案.
 `create-readme.prompt.md`, 我個人有寫檔案需求, 所以我會使用這個檔案來制定一些規範給AI來幫我產生README.md檔案.
 `code-review.agent.md`, 這個檔案是用來做程式碼審查的, 可以協助你找出程式碼中的問題與優化建議.
