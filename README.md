@@ -151,6 +151,8 @@ List<string> items = new List<string>() { "A", "B" };  // 完整型別宣告
 
 </details>
 
+- 可參考 `OldArchitecture.md` 檔案中的相關內容進行調整。
+
 > **提示**: 完整範例可參考專案中的 `.github/instructions/csharp.instructions.md` 檔案
 
 #### 撰寫建議
