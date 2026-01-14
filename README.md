@@ -336,6 +336,7 @@ graph LR
 #### 階段 6: 測試與驗證
 
 **測試檢查清單**:
+
 - [ ] 單元測試通過
 - [ ] 整合測試通過
 - [ ] 手動測試主要流程
@@ -344,6 +345,7 @@ graph LR
 - [ ] 效能測試（如適用）
 
 **提交前確認**:
+
 - [ ] 程式碼已審查
 - [ ] 測試已完成
 - [ ] 文件已更新
@@ -354,21 +356,25 @@ graph LR
 ### 開發心法
 
 **1. AI 是助手，不是替代品**
+
 - AI 提供建議與草稿
 - 開發者負責審查與決策
 - 保持批判性思考
 
 **2. 充分的上下文是關鍵**
+
 - 清楚描述需求
 - 提供相關程式碼參考
 - 說明專案限制
 
 **3. 不要期待一步到位**
+
 - 大型任務需要拆分
 - 逐步優化與調整
 - 保持耐心與迭代思維
 
 **4. 持續學習與優化**
+
 - 記錄有效的提示詞
 - 優化 instructions 檔案
 - 分享團隊最佳實踐
@@ -396,6 +402,7 @@ graph LR
 
 6. **[Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)**  
    官方 Agent Skills 使用說明
+
 7. **[About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)**
    官方 Agent Skills 介紹
 
@@ -414,6 +421,8 @@ graph LR
 透過標準化的設定與流程，AI 工具能夠有效提升開發效率。但請記住：
 
 > **AI 是強大的助手，但最終的品質把關仍需要開發者的專業判斷。**
+
+個人感覺未來趨勢有可能是使用 Agents 來呼叫各個 Skills 達到一個自動化的流程讓工作更順暢。
 
 **成功關鍵**:
 - ✅ 完善的 instructions 檔案
