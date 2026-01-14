@@ -394,6 +394,11 @@ graph LR
 5. **[Spec Kit](https://github.com/github/spec-kit)**  
    SDD 的規範與範本
 
+6. **[Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)**  
+   官方 Agent Skills 使用說明
+7. **[About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)**
+   官方 Agent Skills 介紹
+
 ### 進階學習資源
 
 想深入了解如何更有效使用 AI 開發工具？
