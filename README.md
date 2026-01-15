@@ -11,6 +11,7 @@
 - [設定檔指引](#設定檔指引)
 - [優化 csharp.instructions.md 檔案](#優化-csharpinstructionsmd-檔案)
 - [Prompts 與 Agents 檔案說明](#prompts-與-agents-檔案說明)
+- [Skills 技能檔案說明](#skills-技能檔案說明)
 - [日常 AI 開發流程](#日常-ai-開發流程)
 - [參考資源](#參考資源)
 
@@ -191,6 +192,96 @@
 - **社群資源**: 瀏覽 [GitHub Awesome Copilot](https://github.com/github/awesome-copilot/tree/main) 尋找更多範本
 
 > **提示**: 本專案提供的檔案都是實際測試過的版本，可直接使用或作為基礎進行修改
+
+---
+
+## Skills 技能檔案說明
+
+### 核心概念
+
+**Skills** 是 2025 年 12 月推出的全新 AI 技術協定，與 Instructions、Prompts、Agents 並列為 AI 自訂功能的四大類型。
+
+**檔案用途**:
+- 定義可重複使用的 AI 技能模組
+- 透過關鍵字快速呼叫特定功能
+- 自動被 AI 參考,無需手動呼叫
+- 提供領域專業知識與操作流程
+
+### 使用方式
+
+| 檔案類型 | 檔案位置 | 呼叫方式 | 適用情境 |
+| -------- | -------- | -------- | -------- |
+| **Skills** | `.github/skills/` | 關鍵字觸發 | 需要特定專業技能時 |
+| **Instructions** | `.github/instructions/` | 自動參考 | 編寫程式碼時 |
+| **Prompts** | `.github/prompts/` | 手動呼叫 | 執行特定任務時 |
+| **Agents** | `.github/agents/` | 手動切換 | 需要專家協助時 |
+
+### 範例:CodeReview Skill
+
+本專案提供 `CodeReview` 技能範本作為參考:
+
+**檔案結構**:
+```
+.github/
+└── skills/
+    └── CodeReview/
+        └── SKILL.md
+```
+
+**使用範例**:
+```plaintext
+CodeReview #sym:FindLHS
+```
+
+**說明**:
+- `CodeReview` - 關鍵字,觸發該 Skill
+- `#sym:FindLHS` - 要審查的程式碼檔案標籤
+
+### 建立 Skills 檔案
+
+#### 方法 1: 從 Agent 轉換
+
+如果已有 Agent 檔案,可直接轉換為 Skill:
+
+1. 複製 Agent 檔案內容
+2. 在 `.github/skills/` 建立新資料夾
+3. 建立 `SKILL.md` 檔案
+4. 調整格式以符合 Skill 規範
+
+#### 方法 2: 從零開始
+
+參考官方文件規範撰寫:
+1. 定義 Skill 名稱與觸發關鍵字
+2. 描述 Skill 的功能與用途
+3. 說明使用方式與參數
+4. 提供使用範例
+
+### 注意事項
+
+> **重要提醒**: Skills 會被 AI 自動參考,類似 Instructions 檔案
+
+**疑難排解**:
+
+- ✅ **呼叫成功**: AI 自動識別關鍵字並執行對應功能
+- ❌ **呼叫失敗**: 可能原因:
+  - Skill 檔案說明不夠明確
+  - 關鍵字與 Skill 名稱不匹配
+  - 檔案路徑或格式錯誤
+
+**解決方案**:
+1. 檢查 `SKILL.md` 檔案內容是否清楚
+2. 確認關鍵字定義正確
+3. 必要時可直接呼叫檔案指定使用(但這不是原始設計目的)
+
+### 參考資源
+
+詳細的 Skills 使用說明與規範,請參考:
+
+- [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
+- [Skills 學習平台](https://skillsmp.com/)
+
+> **提示**: Skills 是新技術,建議先從範本開始,逐步熟悉後再自行建立
 
 ---
 
@@ -429,18 +520,4 @@ graph LR
 - ✅ 持續的優化與學習
 
 祝你的 AI 開發之旅順利！
-
-## skills
-
-是一個很新的技術協定, 如何使用可以參考 [參考資源](#參考資源) 中的官方文件。
-2025年底12月才推出的新規範.
-規範與定義我就不說明了, 直接看連結說明比較快
-資料夾中我有新增一隻 CodeReview 的 skills 範本, 可以參考看看.
-內容我是直接從 code-review.agent.md 貼過來的.
-然後修改成 skill.md 格式.
-
-用法就是直接在對話視窗中輸入關鍵字 `CodeReview` 就可以呼叫這個技能來進行程式碼審查.
-ex: CodeReview #sym:FindLHS , 前面的 CodeReview 就是呼叫這個 skill. 後面的 #sym:FindLHS 是要審查的程式碼檔案標籤. 
-skill.md 類似 instruction 檔案, 會被 AI 自動參考, 無需手動呼叫.
-但是有時候會呼叫失敗, 這時候就要先確認是不是 skill檔案中的說明不夠明確導致, 不然也可以嘗試直接呼叫檔案指定他出來使用(但是原先用意並不是要你呼叫)
   
