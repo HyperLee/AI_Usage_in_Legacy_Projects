@@ -441,4 +441,6 @@ graph LR
 
 用法就是直接在對話視窗中輸入關鍵字 `CodeReview` 就可以呼叫這個技能來進行程式碼審查.
 ex: CodeReview #sym:FindLHS , 前面的 CodeReview 就是呼叫這個 skill. 後面的 #sym:FindLHS 是要審查的程式碼檔案標籤. 
+skill.md 類似 instruction 檔案, 會被 AI 自動參考, 無需手動呼叫.
+但是有時候會呼叫失敗, 這時候就要先確認是不是 skill檔案中的說明不夠明確導致, 不然也可以嘗試直接呼叫檔案指定他出來使用(但是原先用意並不是要你呼叫)
   
