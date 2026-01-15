@@ -479,7 +479,7 @@ graph LR
 
 GitHub 正式推出 [Copilot SDK](https://github.com/github/copilot-sdk)，讓開發者能夠將 GitHub Copilot 的智慧代理嵌入自家應用、IDE、服務或自動化流程中。
 
-![Copilot SDK 架構圖](#file:246147.jpg)
+Copilot SDK 架構圖 參考 #file:246147.jpg
 
 ### 什麼是 Copilot SDK
 
