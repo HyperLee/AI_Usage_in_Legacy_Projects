@@ -235,7 +235,7 @@
 ```
 
 **說明**:
-- `CodeReview` - 關鍵字,觸發該 Skill
+- `請用 Code-Review skill 審查` - 關鍵字,觸發該 Skill
 - `#sym:FindLHS` - 要審查的程式碼檔案標籤
 
 ### 建立 Skills 檔案
