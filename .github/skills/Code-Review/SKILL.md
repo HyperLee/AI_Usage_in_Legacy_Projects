@@ -1,8 +1,11 @@
 ---
-name: code-review
-agent: agent
+name: Code-Review
 description: Perform a comprehensive code review
 ---
+
+# Code Review Skill Instructions
+
+Use this skill to conduct a detailed code review of a given code snippet. Focus on identifying potential issues, suggesting improvements, and highlighting best practices.
 
 ## Role
 
