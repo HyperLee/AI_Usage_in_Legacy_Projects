@@ -225,13 +225,13 @@
 ```
 .github/
 └── skills/
-    └── CodeReview/
+    └── Code-Review/
         └── SKILL.md
 ```
 
 **使用範例**:
 ```plaintext
-CodeReview #sym:FindLHS
+請用 Code-Review skill 審查 #sym:FindLHS
 ```
 
 **說明**:
