@@ -90,10 +90,10 @@
 ```plaintext
 步驟流程：
 1. 將範本檔案放入專案
-2. 開啟對話視窗，選擇進階模型（建議: Claude Sonnet 4.5）
+2. 開啟對話視窗，選擇進階模型（Claude Opus 4.5 / GPT-5.2 Codex）
 3. 輸入提示詞：
-   "請參考 .github/instructions/csharp.instructions.md 檔案內容作為範本，
-    根據目前專案的寫法與規範，幫我更新這份檔案"
+   "請參考 .github/instructions/csharp.instructions.md 檔案架構內容作為範本，
+    根據目前專案的寫法與規範，幫我更新這份檔案. 先深度研究與思考再開始修改。"
 4. AI 會根據專案程式碼風格產生優化建議
 ```
 
@@ -120,11 +120,11 @@
 
 ### 特殊情境：舊版 .NET Framework 專案
 
-針對 .NET Framework 4.0 等舊版本專案，建議在 `csharp.instructions.md` 中明確定義技術限制：
+針對 .NET Framework 4.0 等舊版本專案，建議在 `xxx.prompt.md` 中明確定義技術限制：
 
 - 可參考 `OldArchitecture.md` 檔案中的相關內容進行調整。
 
-> **提示**: 完整範例可參考專案中的 `.github/instructions/csharp.instructions.md` 檔案
+> **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本, 可以嘗試在 prompt 中再次強調這個限制條件.
 
 #### 撰寫建議
 
@@ -146,6 +146,7 @@
 ### 檔案功能介紹
 
 #### create-readme.prompt.md
+
 **用途**: 文件產生提示範本
 
 - 定義 README 文件的撰寫規範
@@ -157,6 +158,7 @@
 ---
 
 #### code-review.agent.md
+
 **用途**: 程式碼審查專用 Agent
 
 - 自動檢查程式碼品質
@@ -164,6 +166,7 @@
 - 提供優化建議
 
 **適用情境**: 
+
 - 提交 Pull Request 前的自我審查
 - 重構程式碼時的品質把關
 - 學習最佳實踐
@@ -171,6 +174,7 @@
 ---
 
 #### CSharpExpert.agent.md
+
 **用途**: C# 專家助手
 
 - 解決 C# 相關技術問題
@@ -178,6 +182,7 @@
 - 協助疑難排解
 
 **適用情境**:
+
 - 遇到複雜的 C# 問題
 - 需要架構設計建議
 - 學習進階 C# 技巧
@@ -203,6 +208,7 @@
 **Skills** 是 2025 年 12 月推出的全新 AI 技術協定，與 Instructions、Prompts、Agents 並列為 AI 自訂功能的四大類型。
 
 **檔案用途**:
+
 - 定義可重複使用的 AI 技能模組
 - 透過關鍵字快速呼叫特定功能
 - 自動被 AI 參考,無需手動呼叫
@@ -217,9 +223,9 @@
 | **Prompts** | `.github/prompts/` | 手動呼叫 | 執行特定任務時 |
 | **Agents** | `.github/agents/` | 手動切換 | 需要專家協助時 |
 
-### 範例:CodeReview Skill
+### 範例:Code-Review Skill
 
-本專案提供 `CodeReview` 技能範本作為參考:
+本專案提供 `Code-Review` 技能範本作為參考:
 
 **檔案結構**:
 ```
@@ -235,7 +241,8 @@
 ```
 
 **說明**:
-- `請用 Code-Review skill 審查` - 關鍵字,觸發該 Skill
+
+- `請用 Code-Review skill 審查` - 關鍵字, 自動觸發該 Skill
 - `#sym:FindLHS` - 要審查的程式碼檔案標籤
 
 ### 建立 Skills 檔案
@@ -259,7 +266,7 @@
 
 ### 注意事項
 
-> **重要提醒**: Skills 會被 AI 自動參考,類似 Instructions 檔案
+> **重要提醒**: Skills 是經由關鍵字自動觸發的
 
 **疑難排解**:
 
@@ -382,11 +389,12 @@ graph LR
 
 | 工作類型 | 建議模型 | 原因 |
 | -------- | -------- | ---- |
-| 規格書撰寫 | Claude Sonnet 4.5 / Opus 4.5 | 需要更好的邏輯推理與文件組織能力 |
+| 規格書撰寫 | Claude Sonnet 4.5 / Opus 4.5 / GPT-5.2 Codex | 需要更好的邏輯推理與文件組織能力 |
 | 程式碼開發 | Claude Sonnet 4.5 | 平衡效能與成本 |
 | 簡單需求 | Raptor mini | 節省 AI 額度 |
 
 **成本控制建議**:
+
 - 高級請求額度充足 → 全程使用進階模型
 - 額度有限 → 規格階段用進階模型，開發階段用標準模型
 
