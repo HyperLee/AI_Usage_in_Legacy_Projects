@@ -249,7 +249,7 @@
 
 #### 方法 1: 從 Agent 轉換
 
-如果已有 Agent 檔案,可直接轉換為 Skill:
+如果已有 Custom Agent 檔案,可直接轉換為 Skill:
 
 1. 複製 Agent 檔案內容
 2. 在 `.github/skills/` 建立新資料夾
@@ -263,6 +263,11 @@
 2. 描述 Skill 的功能與用途
 3. 說明使用方式與參數
 4. 提供使用範例
+
+#### 方法 3: 使用 skill-creator
+
+使用 skill-creator 這個 skills 來建立屬於自己的 skills,
+使用自然語言透過AI輔助來幫助生成skills檔案
 
 ### 注意事項
 
