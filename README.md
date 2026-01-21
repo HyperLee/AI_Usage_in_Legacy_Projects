@@ -124,7 +124,7 @@
 
 - 可參考 `OldArchitecture.md` 檔案中的相關內容進行調整。
 
-> **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本, 可以嘗試在 prompt 中再次強調這個限制條件.
+> **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本， 可以嘗試在 prompt 中再次強調這個限制條件.
 
 #### 撰寫建議
 
@@ -211,7 +211,7 @@
 
 - 定義可重複使用的 AI 技能模組
 - 透過關鍵字快速呼叫特定功能
-- 自動被 AI 參考,無需手動呼叫
+- 自動被 AI 參考，無需手動呼叫
 - 提供領域專業知識與操作流程
 
 ### 使用方式
@@ -242,14 +242,14 @@
 
 **說明**:
 
-- `請用 Code-Review skill 審查` - 關鍵字, 自動觸發該 Skill
+- `請用 Code-Review skill 審查` - 關鍵字， 自動觸發該 Skill
 - `#sym:FindLHS` - 要審查的程式碼檔案標籤
 
 ### 建立 Skills 檔案
 
 #### 方法 1: 從 Agent 轉換
 
-如果已有 Custom Agent 檔案,可直接轉換為 Skill:
+如果已有 Custom Agent 檔案，可直接轉換為 Skill:
 
 1. 複製 Agent 檔案內容
 2. 在 `.github/skills/` 建立新資料夾
@@ -259,19 +259,19 @@
 #### 方法 2: 從零開始
 
 參考官方文件規範撰寫:
-1. 定義 Skill 名稱與觸發關鍵字
-2. 描述 Skill 的功能與用途
+1. 定義 SKILL 名稱與觸發關鍵字
+2. 描述 SKILL 的功能與用途
 3. 說明使用方式與參數
 4. 提供使用範例
 
 #### 方法 3: 使用 skill-creator
 
-使用 skill-creator 這個 skills 來建立屬於自己的 skills,
+使用 skill-creator 這個 skills 來建立屬於自己的 skills，
 使用自然語言透過AI輔助來幫助生成skills檔案
 
 ### 注意事項
 
-> **重要提醒**: Skills 是經由關鍵字自動觸發的
+> **重要提醒**: Skills 是經由關鍵字自動觸發的， VS Code 預設沒有開啟支援， 需要在設定中啟用:chat.useAgentSkills. 詳細可以參考官方說明
 
 **疑難排解**:
 
@@ -288,13 +288,13 @@
 
 ### 參考資源
 
-詳細的 Skills 使用說明與規範,請參考:
+詳細的 Skills 使用說明與規範，請參考:
 
 - [Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
 - [About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 - [Skills 學習平台](https://skillsmp.com/)
 
-> **提示**: Skills 是新技術,建議先從範本開始,逐步熟悉後再自行建立
+> **提示**: Skills 是新技術，建議先從範本開始，逐步熟悉後再自行建立
 
 ---
 
@@ -379,7 +379,7 @@ graph LR
 
 ✅ 良好範例：
 "幫我做一個會員系統，需求如下：
-- 使用 ASP.NET Core 10.0, c# 14
+- 使用 ASP.NET Core 10.0， c# 14
 - 支援 Email/Google 登入
 - 需要 Email 驗證
 - 包含角色權限管理
