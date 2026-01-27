@@ -566,6 +566,9 @@ Copilot SDK 是一套多平台開發套件，用於將 GitHub Copilot Agent 整�
 7. **[About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)**
    官方 Agent Skills 介紹
 
+8. **[Clawdbot](https://www.inside.com.tw/article/40571-clawdbot-github-mac-mini-ai-agent-logan-kilpatrick)**
+   Clawdbot 在 GitHub 自我定位為「你在自己設備上運行的個人 AI 助理」，它還會在你已經在用的管道回覆你，包含 WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、Microsoft Teams、WebChat，並延伸支援更多通道。
+
 ### 進階學習資源
 
 想深入了解如何更有效使用 AI 開發工具？
