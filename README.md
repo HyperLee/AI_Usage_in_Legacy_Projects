@@ -269,6 +269,11 @@
 使用 skill-creator 這個 skills 來建立屬於自己的 skills，
 使用自然語言透過AI輔助來幫助生成skills檔案
 
+#### 方法 4: GitHub 找有興趣的 Repository
+
+在 GitHub 上找出覺得不錯或是有趣的 Repository，將其下載下來之後，將裡面的 程式碼 檔案轉換成 Skills 檔案
+對著 AI 說: "把這個目錄中的專案變成我的全域性 Skills 檔案"
+
 ### 注意事項
 
 > **重要提醒**: Skills 是經由關鍵字自動觸發的， VS Code 預設沒有開啟支援， 需要在設定中啟用:chat.useAgentSkills. 詳細可以參考官方說明
