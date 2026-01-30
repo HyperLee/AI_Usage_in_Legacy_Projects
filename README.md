@@ -497,7 +497,7 @@ graph LR
 
 ## Copilot SDK - 客製化整合方案
 
-> **最新功能** (2026/01/14 推出)
+> **最新功能** (2026 年 1 月 推出)
 
 GitHub 正式推出 [Copilot SDK](https://github.com/github/copilot-sdk)，讓開發者能夠將 GitHub Copilot 的智慧代理嵌入自家應用、IDE、服務或自動化流程中。
 
