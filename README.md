@@ -1,4 +1,4 @@
-# AI 導入專案前期設定
+# AI 導入專案相關設定與使用習慣
 
 > **預設 AI 工具**: GitHub Copilot
 
@@ -9,7 +9,7 @@
 ## 目錄
 
 - [設定檔指引](#設定檔指引)
-- [優化 csharp.instructions.md 檔案](#優化-csharpinstructionsmd-檔案)
+- [csharp.instructions.md 檔案](#csharpinstructionsmd-檔案)
 - [Prompts 與 Agents 檔案說明](#prompts-與-agents-檔案說明)
 - [Skills 技能檔案說明](#skills-技能檔案說明)
 - [日常 AI 開發流程](#日常-ai-開發流程)
