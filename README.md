@@ -120,14 +120,16 @@
 
 ### 特殊情境：舊版 .NET Framework 專案
 
-針對 .NET Framework 4.0 以下特別舊版本專案，建議在 `xxx.prompt.md` 中明確定義技術限制：
+針對 .NET Framework 4.0 以下特別舊版本專案，建議在開發規格書的 `xxx.prompt.md` 中明確定義技術限制：
 
 - 可參考 [OldArchitecture.md](OldArchitecture.md) 檔案中的相關內容進行調整。
 - AI 寫的程式碼通常都是用比較新的版本, 對於這種特別古老(上古時代/史前時代)的版本, 需要在 prompt 中特別強調.
 
 ```plaintext
 
-> **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本， 可以嘗試在 prompt 中再次強調這個限制條件.
+> **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本， 可以嘗試在 prompt 中再次強調這個限制條件. 不過近期新版本的 AI 模型對於 instructions 的遵守度已經有明顯提升，通常不需要額外在 prompt 中重複定義.
+
+```
 
 #### 撰寫建議
 
