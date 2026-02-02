@@ -269,6 +269,11 @@
 使用 skill-creator 這個 skills 來建立屬於自己的 skills，
 使用自然語言透過AI輔助來幫助生成skills檔案
 
+#### 方法 4: GitHub 找有興趣的 Repository
+
+在 GitHub 上找出覺得不錯或是有趣的 Repository，將其下載下來之後，將裡面的 程式碼 檔案轉換成 Skills 檔案
+對著 AI 說: "把這個目錄中的專案變成我的全域性 Skills 檔案"
+
 ### 注意事項
 
 > **重要提醒**: Skills 是經由關鍵字自動觸發的， VS Code 預設沒有開啟支援， 需要在設定中啟用:chat.useAgentSkills. 詳細可以參考官方說明
@@ -492,7 +497,7 @@ graph LR
 
 ## Copilot SDK - 客製化整合方案
 
-> **最新功能** (2026/01/14 推出)
+> **最新功能** (2026 年 1 月 推出)
 
 GitHub 正式推出 [Copilot SDK](https://github.com/github/copilot-sdk)，讓開發者能夠將 GitHub Copilot 的智慧代理嵌入自家應用、IDE、服務或自動化流程中。
 
@@ -565,6 +570,10 @@ Copilot SDK 是一套多平台開發套件，用於將 GitHub Copilot Agent 整�
 
 7. **[About Agent Skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)**
    官方 Agent Skills 介紹
+
+8. **[Clawdbot](https://www.inside.com.tw/article/40571-clawdbot-github-mac-mini-ai-agent-logan-kilpatrick)**
+   Clawdbot 在 GitHub 自我定位為「你在自己設備上運行的個人 AI 助理」，它還會在你已經在用的管道回覆你，包含 WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、Microsoft Teams、WebChat，並延伸支援更多通道。
+   - [介紹說明](https://2023meowmiles.com/moltbot-%e5%ae%8c%e6%95%b4%e6%8c%87%e5%8d%97%ef%bc%9a6-%e8%90%ac-github-stars-%e8%83%8c%e5%be%8c%e7%9a%84%e8%87%aa%e8%a8%97%e7%ae%a1-ai-%e5%8a%a9%e6%89%8b%ef%bc%8c%e9%96%8b%e7%99%bc%e8%80%85%e5%bf%85/)
 
 ### 進階學習資源
 
