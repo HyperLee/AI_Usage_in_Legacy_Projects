@@ -71,11 +71,11 @@
 
 ---
 
-## [csharp.instructions.md](.github/instructions/csharp.instructions.md) 檔案
+## csharp.instructions.md 檔案
 
 ### 核心概念
 
-`csharp.instructions.md` 是 AI 分析程式碼的**核心規則檔案**，需要根據專案特性進行客製化調整。
+[csharp.instructions.md](.github/instructions/csharp.instructions.md) 是 AI 分析程式碼的**核心規則檔案**，需要根據專案特性進行客製化調整。
 
 **檔案用途**:
 - 定義專案的程式碼風格
