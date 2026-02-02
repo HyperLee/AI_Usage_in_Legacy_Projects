@@ -128,7 +128,6 @@
 ```plaintext
 
 > **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本， 可以嘗試在 prompt 中再次強調這個限制條件. 
-不過近期新版本的 AI 模型對於 instructions 的遵守度已經有明顯提升，通常不需要額外在 prompt 中重複定義.
 
 ```
 
