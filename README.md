@@ -145,7 +145,7 @@
 
 ### 檔案功能介紹
 
-#### create-readme.prompt.md
+#### [create-readme.prompt.md](create-readme.prompt.md)
 
 **用途**: 文件產生提示範本
 
