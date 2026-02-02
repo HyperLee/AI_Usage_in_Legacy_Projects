@@ -122,7 +122,7 @@
 
 針對 .NET Framework 4.0 等舊版本專案，建議在 `xxx.prompt.md` 中明確定義技術限制：
 
-- 可參考 `OldArchitecture.md` 檔案中的相關內容進行調整。
+- 可參考 [OldArchitecture.md](OldArchitecture.md) 檔案中的相關內容進行調整。
 
 > **提示**: 如果再 `csharp.instructions.md` 中定義過但是產生的程式碼還是會超出使用語言版本， 可以嘗試在 prompt 中再次強調這個限制條件.
 
