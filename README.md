@@ -145,7 +145,7 @@
 
 ### 檔案功能介紹
 
-#### [create-readme.prompt.md](create-readme.prompt.md)
+#### [create-readme.prompt.md](.github/prompts/create-readme.prompt.md)
 
 **用途**: 文件產生提示範本
 
@@ -157,7 +157,7 @@
 
 ---
 
-#### code-review.agent.md
+#### [code-review.agent.md](.github/agents/code-review.agent.md)
 
 **用途**: 程式碼審查專用 Agent
 
@@ -173,7 +173,7 @@
 
 ---
 
-#### CSharpExpert.agent.md
+#### [CSharpExpert.agent.md](.github/agents/CSharpExpert.agent.md)
 
 **用途**: C# 專家助手
 
@@ -223,7 +223,7 @@
 | **Prompts** | `.github/prompts/` | 手動呼叫 | 執行特定任務時 |
 | **Agents** | `.github/agents/` | 手動切換 | 需要專家協助時 |
 
-### 範例:Code-Review Skill
+### 範例: [Code-Review](.github/skills/Code-Review/SKILL.md) Skill
 
 本專案提供 `Code-Review` 技能範本作為參考:
 
