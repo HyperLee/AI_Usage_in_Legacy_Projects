@@ -9,3 +9,6 @@
  - @mermAId /uml 建立類別圖 (UML)
  - @mermAId /sequence 建立循序圖
  - @mermAId /iterate 修改目前顯示的 Mermaid 圖表
+
+
+[GitHub Repository](https://github.com/microsoft/vscode-mermAId)
