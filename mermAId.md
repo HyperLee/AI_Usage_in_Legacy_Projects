@@ -38,13 +38,3 @@ Exploration into Copilot Chat-powered Diagram Generation
 - GitHub Repository: [microsoft/vscode-mermAId](https://github.com/microsoft/vscode-mermAId)
 - 若有問題或要回報 Bugs，請在上面的 repo 提出 Issue。
 
----
-
-## 注意事項 ⚠️
-
-- 這個專案屬於探索性質，可能需要特定版本的 Copilot Chat 或 VS Code 才能正常運作。
-- 請參考原始專案的說明文件以取得最新相依與使用方式。
-
----
-
-如果你要我再把此 README 翻成英文版本或加入更多使用範例，請告訴我想要的內容。
